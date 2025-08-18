@@ -6,7 +6,7 @@ import './PosterScroll.css';
 
 
 const PosterScroll = () => {
-    const images = ["./public/poster1.webp","./public/poster2.webp","./public/poster3.webp"];
+    const images = ["/poster1.webp","/poster2.webp","/poster3.webp"];
     const [index, setIndex] = useState(0);
 
     useEffect(()=>{
