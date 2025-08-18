@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import './PosterScroll.css';
 
+import Poster1 from '../assets/poster1.webp';
+import Poster2 from '../assets/poster2.webp';
+import Poster3 from '../assets/poster3.webp';
 
 
 
 
 const PosterScroll = () => {
-    const images = ["/poster1.webp","/poster2.webp","/poster3.webp"];
+    const images = [Poster1,Poster2,Poster3];
     const [index, setIndex] = useState(0);
 
     useEffect(()=>{

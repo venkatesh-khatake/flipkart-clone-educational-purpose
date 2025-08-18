@@ -1,12 +1,14 @@
 import React from 'react'
 import './Header.css'
 
+import Logo from '../assets/flipkartLogo.png';
+
 const Header = () => {
   return (
     <div className='header'>
       <div className="logo">
         {/* <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" width="140" height="40" title="Flipkart"></img> */}
-        <img src="./src/assets/flipkartLogo.png" alt="" />
+        <img src={Logo} alt="" />
       </div>
       <div className="searchBar">
         <i className="fa-solid fa-magnifying-glass"></i>
