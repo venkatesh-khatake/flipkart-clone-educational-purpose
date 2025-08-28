@@ -5,6 +5,7 @@ import Header from './components/Header'
 import CategoryList from './components/CategoryList'
 import PosterScroll from './components/PosterScroll'
 import CardList from './components/CardList'
+import FlightBooking from './components/FlightBooking'
 
 
 
@@ -15,7 +16,10 @@ function App() {
       <Header/>
       <CategoryList/>
       <PosterScroll/>
-      <CardList title={"Best of Electronics"}/>
+      <div className="container">
+        <CardList title={"Best of Electronics"}/>
+        <FlightBooking/>
+      </div>
     </>
   )
 }
