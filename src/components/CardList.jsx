@@ -10,23 +10,25 @@ import buds from '../assets/buds.webp';
 import Printers from '../assets/printers.webp';
 
 
-const CardList = ({title}) => {
+const CardList = ({title, data}) => {
   return (
-    <div className='cardList'>
+    <div className='cardList'
+      style={{
+        width : '78vw'
+      }}
+    >
      
      <div className="title">
         <h2>{title}</h2>
      </div>
 
      <div className="cards">
-        <Card image = {Monitors} pName = "Monotors" pPrice = "6999"/>
-        <Card image = {Speaker} pName = "Speakers" pPrice = "6999"/>
-        <Card image = {buds} pName = "Buds" pPrice = "6999"/>
-        <Card image = {watch} pName = "Watch" pPrice = "6999"/>
-        <Card image = {cam} pName = "Camera" pPrice = "6999"/>
-        <Card image = {Printers} pName = "Printers" pPrice = "6999"/>
-        <Card image = {Projector} pName = "Projector" pPrice = "6999"/>
-
+          
+       {
+         data.map((item)=>(
+            <Card image={item.image} pName={item.name} pPrice={item.price}/> 
+        ))
+       }
      </div>
 
     </div>

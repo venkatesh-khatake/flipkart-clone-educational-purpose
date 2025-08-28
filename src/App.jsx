@@ -7,9 +7,42 @@ import PosterScroll from './components/PosterScroll'
 import CardList from './components/CardList'
 import FlightBooking from './components/FlightBooking'
 
+// electronics
+import Monitors from './assets/monitors.webp';
+import Projector from './assets/projector.webp';
+import Speaker from './assets/speaker.webp';
+import watch from './assets/watch.webp';
+import cam from './assets/cam.webp';
+import buds from './assets/buds.webp';
+import Printers from './assets/printers.webp';
+
+//
+
+import MultiCardList from './components/MultiCardList';
+
+import Batman from './assets/batman.webp';
+import Pens from './assets/pens.webp';
+import Bicycle from './assets/bicycle.webp';
+import Remote from './assets/remoteControltoy.webp';
+import DryFruits from './assets/dryFruits.webp';
+import Coffee from './assets/coffee.webp';
+import Soft from './assets/softtoys.webp';
+
+
+
 
 
 function App() {
+
+  const electronics = [
+  {name:"Monitors", image:Monitors, price : 6999},
+  {name:"Projector", image:Projector, price : 6999},
+  {name:"Speaker", image:Speaker, price : 6999},
+  {name:"Watch", image:watch, price : 6999},
+  {name:"Camera", image:cam, price : 6999},
+  {name:"Buds", image:buds, price : 6999},
+  {name:"Printers", image:Printers, price : 6999},
+  ];
 
   return (
     <>
@@ -17,9 +50,11 @@ function App() {
       <CategoryList/>
       <PosterScroll/>
       <div className="container">
-        <CardList title={"Best of Electronics"}/>
+        <CardList title={"Best of Electronics"} data = {electronics}/>
         <FlightBooking/>
       </div>
+
+      <MultiCardList/>
     </>
   )
 }
